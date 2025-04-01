@@ -1,0 +1,224 @@
+/* Réinitialisation de certains styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #6D7275;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/bg-wall.jpg");
+    font-family: 'Gill Sans', sans-serif;
+   
+}
+
+/* COULEUR BARRE DE NAVIGATION */
+/* .navbar {
+    background-color: #FD618D;
+
+} */
+
+ul {
+    margin: auto;
+
+}
+
+.logoSonia {
+    height: 18em;
+}
+
+
+nav ul {
+    width: 900px;
+    justify-content: space-between;
+    color: antiquewhite;
+
+}
+
+.nav-link {
+    color: #1f1f1f;
+    font-weight: bolder;
+}
+
+/* Header */
+header {
+    /*     background-color: #FD618D; */
+    color: white;
+}
+
+
+.AnimatedFoto {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.Animated {
+    animation: fadeIn 1.7s ease-out;
+}
+
+.titleAnimated {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.subtitleAnimated {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out 1s;
+}
+
+/* .title {
+    font-size: 2.7rem;
+
+} */
+
+.subtitle {
+ /*    font-size: 1.5rem; */
+    margin-top: 10px;
+
+}
+
+i {
+    color: whitesmoke;
+}
+i:hover {
+    color: black;
+}
+
+/* ARROW DOWN */
+li {
+    list-style-type: none;
+  }
+/* Base équivalente en rem */
+:root {
+    --base: 0.6rem;
+}
+
+.containerArrow {
+    background-color: #891801;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    margin-top: 3rem;
+}
+
+.chevron {
+    position: absolute;
+    width: calc(0.6rem * 3.5);
+    height: calc(0.6rem * 0.8);
+    opacity: 0;
+    transform: scale(0.3);
+    animation: move-chevron 3s ease-out infinite;
+}
+
+.chevron:first-child {
+    animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+    animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 25%;
+    width: 50%;
+    background: #891801;
+}
+
+.chevron:before {
+    left: 0;
+    transform: skewY(30deg);
+}
+
+.chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skewY(-30deg);
+}
+
+li .chevron {
+    list-style:none;
+}
+
+
+/* Section des projets */
+
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.project {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+section a {
+    text-decoration: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: #FD618D;
+    color:#1f1f1f;
+    font-size: 1rem;
+}
+
+footer a {
+    
+    color:#1f1f1f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes move-chevron {
+    25% {
+        opacity: 1;
+    }
+
+    33.3% {
+        opacity: 1;
+        transform: translateY(calc(0.6rem * 3.8));
+    }
+
+    66.6% {
+        opacity: 1;
+        transform: translateY(calc(0.6rem * 5.2));
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(calc(0.6rem * 8)) scale(0.5);
+    }
+}
+
+/* Animation fadeIn */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

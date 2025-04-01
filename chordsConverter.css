@@ -1,0 +1,188 @@
+/* Réinitialisation de certains styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    margin: auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #6D7275;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/bg-wall.jpg");
+    font-family: 'Gill Sans', sans-serif;
+
+}
+
+/* ------------------------- NAV ------------------------- */
+
+ul {
+    margin: auto;
+
+}
+
+.logoSonia {
+    height: 18em;
+}
+
+
+nav ul {
+    width: 900px;
+    justify-content: space-between;
+    color: antiquewhite;
+
+}
+
+.nav-link {
+    color: #1f1f1f;
+    font-weight: bolder;
+}
+
+
+
+/* ------------------------- CONTENT ------------------------- */
+
+header {
+    background-color: #eaeaea96;
+  border-radius: 12px;
+}
+
+.logoCC {
+    width: 25%;
+}
+
+/* .intro {
+    color: #637f51;
+    font-weight: bold;
+} */
+
+a {
+    text-decoration:dashed;
+}
+
+.tryIt {
+  box-shadow: 10px 10px;
+  background: #63bf7c;
+  color: #162029ed;
+  text-decoration: none;
+
+}
+
+.tryIt:hover {
+  background-color: #f8e409;
+}
+
+
+#project-description {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 640px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    padding: 40px;
+
+/*     color: #333; */
+    background-color: #eaeaea96;
+  border-radius: 12px;
+}
+
+#project-description h2 {
+    font-size: 2.5rem;
+    
+    margin-bottom: 20px;
+}
+
+#project-description h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+
+}
+
+#project-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#project-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#project-description li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#project-description strong {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    #project-description {
+        padding: 20px;
+    }
+
+    #project-description h2 {
+        font-size: 2rem;
+    }
+
+    #project-description h3 {
+        font-size: 1.5rem;
+    }
+
+    #project-description p,
+    #project-description li {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- Footer ------------------------- */
+footer {
+    background-color: #FD618D;
+    color: #1f1f1f;
+    font-size: 1rem;
+}
+
+footer a {
+
+    color: #1f1f1f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -220,6 +220,10 @@ a {
     background: rgba(255, 255, 255, 0.487);
 }
 
+.card-title {
+    font-size: 3em;
+}
+
 /* Footer */
 footer {
     background-color: #FD618D;
